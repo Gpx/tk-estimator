@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TK Estimator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+  </head>
+  <body>
+    <h1>The GMV Calculator</h1>
+
+    <div class="form">
+      <div class="input">
+        This month we booked €
+        <input
+           id="income"
+           type="number"
+           value="0"
+           min="0"
+           autofocus
+           >
+      </div>
+
+      <div class="output">
+        By the end of the month we expect
+        <div id="expected"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
