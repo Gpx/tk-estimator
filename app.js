@@ -3,7 +3,7 @@ const calculateExpectedGMV = () => {
   const now = new Date()
   const currentTime = now.getTime()
   const beginOfMonth = new Date(now.getFullYear(), now.getMonth(), 1).getTime()
-  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getTime()
+  const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59).getTime()
 
   return amount * (endOfMonth - beginOfMonth) / (currentTime - beginOfMonth)
 }
